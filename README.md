@@ -61,7 +61,7 @@ CRUD applications are the foundation of most web applications. Being able to man
 
 * [x] First, we need to be able to navigate to the edit movie component. In App.js, add in the `<EditMovieForm> `component to the supplied edit route.
 
-* [ ] Next, we need to grab the id being passed into the component through the url. Use the `useParams` hook to get the id value.
+* [x] Next, we need to grab the id being passed into the component through the url. Use the `useParams` hook to get the id value.
 
 * [ ] We need to be able to load in the current movie's attributes into our local form state. When `EditMovieForm` mount, retrieve our current id's movie from the api and save the data returned to local state.
 
@@ -76,7 +76,7 @@ CRUD applications are the foundation of most web applications. Being able to man
 #### Deleting a Movie
 > *You added in a CRUD feature! Good job! Now let's get deleted squared away...*
 
-* [ ] Identify the component that holds the "button" needed for deletion. Add an event handler to that button.
+* [x] Identify the component that holds the "button" needed for deletion. Add an event handler to that button.
 
 * [ ] Build an event handler that makes a request to delete the currently viewed movie. Observe what is returned from the request.
 

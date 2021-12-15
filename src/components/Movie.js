@@ -12,7 +12,7 @@ const Movie = (props) => {
     const { push } = useHistory();
 
     useEffect(()=>{
-        axios.get(`http://localhost:5000/api/movies/${id}`)
+        axios.get(`http://localhost:9000/api/movies/${id}`)
             .then(res=>{
                 setMovie(res.data);
             })
@@ -23,6 +23,14 @@ const Movie = (props) => {
 
     const handleDelete = () => {
 
+      axios.delete(`http://localhost:9000/movies/1`)
+      .then(resp=> {
+        console.log(resp)
+        //push('/item-list');
+      })
+      .catch(err=> {
+        console.log(err);
+      })
     }
 
     return(<div className="modal-page col">
