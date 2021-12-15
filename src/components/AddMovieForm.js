@@ -27,9 +27,9 @@ const AddMovieForm = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.put(`http://localhost:9000/api/movies/${id}`, movie)
+        axios.post(`http://localhost:9000/api/movies`, movie)
             .then(res=>{
-                console.log(res)
+                console.log(res.data)
                 setMovies(res.data);
                 push(`/movies`);
 			})
